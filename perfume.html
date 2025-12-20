@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Veneris | Luxury Perfume</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* LOGIN */
+#loginPage {
+    height: 100vh;
+    background: linear-gradient(135deg, #000, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: #fff;
+    padding: 35px;
+    width: 320px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.login-box h1 {
+    font-family: serif;
+    letter-spacing: 2px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.login-box p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+/* MAIN WEBSITE */
+#mainSite {
+    display: none;
+}
+
+/* NAVBAR */
+nav {
+    background: black;
+    color: white;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-family: serif;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background: linear-gradient(to right, #eaeaea, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-family: serif;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-family: serif;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 15px 0 5px;
+    font-family: serif;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px;
+    background: white;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: serif;
+    margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+</style>
+</head>
+
+<body>
+<!-- LOGIN PAGE -->
+<div id="loginPage">
+    <div class="login-box">
+        <h1>THE VENERIS</h1>
+        <p>Login to Continue</p>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p>admin / 1234</p>
+    </div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="mainSite">
+
+<nav>
+    <h2>THE VENERIS</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <div>
+        <h1>Elevate Your Aura</h1>
+        <p>Luxury Fragrance Collection</p>
+    </div>
+</section>
+
+<section id="products" class="products">
+    <h2>Our Perfumes</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://venussecrets.com/wp-content/uploads/2016/05/Vetiver-and-Iris-50ml-430x430.jpg">
+            <h3>Blush Reverie</h3>
+            <p>Eau de Parfum – 100 ML</p>
+        </div>
+
+        <div class="product">
+            <img src="https://essencehouse.in/cdn/shop/files/Untitleddesign_8_8f81e864-19c8-4acb-a259-76b32e58f0ba.png?v=1761309332&width=1445">
+            <h3>Dominus</h3>
+            <p>Eau de Parfum – 100 ML</p>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        THE VENERIS is a premium perfume brand designed for individuals
+        who value elegance, confidence, and sophistication. Each scent
+        is crafted to leave a lasting impression.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: theveneris@gmail.com</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+    © 2025 THE VENERIS. All Rights Reserved.
+</footer>
+
+</div>
+
+<script>
+function login() {
+    let u = document.getElementById("username").value;
+    let p = document.getElementById("password").value;
+
+    if (u === "admin" && p === "1234") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("mainSite").style.display = "block";
+    } else {
+        alert("Invalid Login");
+    }
+}
+</script>
+
+</body>
+</html>
